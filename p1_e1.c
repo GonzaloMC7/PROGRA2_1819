@@ -92,6 +92,7 @@ int main (int argc, char** argv){
         return -1;
     }else fprintf(stdout,"Nombre del segundo nodo: %s\n\n",aux2);
     
+    node_destroy(n2);
     n2=node_copy(n1);
     if(!n2){
         fprintf(stdout,"ERROR while copying nodes\n");
@@ -112,5 +113,7 @@ int main (int argc, char** argv){
     }else fprintf(stdout,"No.\n");
     
     /*LIBERAR*/
+    node_destroy(n1);
+    node_destroy(n2);
     return 0;
 }
