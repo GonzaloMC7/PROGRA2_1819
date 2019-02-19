@@ -21,8 +21,7 @@ node.o : node.c node.h
 	@echo "# Depende de $^"
 	@echo "# Ha cambiado $<"
 	$(CC) $(CFLAGS) -c $<
-	
-	
+		
 graph.o : graph.c graph.h
 		@echo "#---------------------------"
 		@echo "# Generando $@"
